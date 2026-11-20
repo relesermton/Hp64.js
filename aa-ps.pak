@@ -1,0 +1,11 @@
+#HP64-PAK1
+{
+  "profile": "aa-ps",
+  "description": "HP64.js aggressive-speed profile: forces fullcode link, max threads, caches to .hp64-cache",
+  "mode": "fullcode",
+  "threads": 0,
+  "cacheDir": ".hp64-cache",
+  "entry": "demo/main.ts",
+  "out": "dist/aa-ps.js",
+  "sourceMaps": false
+}

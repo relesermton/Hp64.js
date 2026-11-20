@@ -1,0 +1,26 @@
+{
+  "name": "hp64.js",
+  "version": "1.0.0",
+  "description": "HP64.js - the fastest JS and TS compiler",
+  "main": "App.js",
+  "bin": {
+    "hp64": "./App.js"
+  },
+  "scripts": {
+    "build": "node App.js build src/main.ts",
+    "test": "node App.js selftest"
+  },
+  "optionalDependencies": {
+    "bungegecords": "latest",
+    "cli": "1.0.1",
+    "swiftinbrowser": "latest",
+    "teavm": "latest",
+    "verecl-cli": "latest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/core": "^1.16.22",
+    "esbuild": "^0.28.2",
+    "typescript": "5.9"
+  }
+}

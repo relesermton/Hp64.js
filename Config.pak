@@ -1,0 +1,10 @@
+#HP64-PAK1
+{
+  "name": "HP64.js",
+  "out": "dist/out.js",
+  "fullcodeOut": "dist/fullcode.js",
+  "threads": 0,
+  "minify": false,
+  "extensions": [".go", ".ts", ".tsx", ".js", ".jsx"],
+  "externals": ["node", "fs", "path"]
+}

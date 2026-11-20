@@ -1,0 +1,15 @@
+"use strict";
+const fs = require("fs");
+const s = fs.readFileSync("bench/app.ts", "utf8");
+const c = (re) => (s.match(re) || []).length;
+console.log("len:", s.length);
+console.log("type aliases:", c(/^\s*type\s/gm));
+console.log("interface:", c(/^\s*interface\s/gm));
+console.log("colons:", c(/:/g));
+console.log("? chars:", c(/\?/g));
+console.log("): occurrences:", c(/\)/g));
+console.log("^import:", c(/^import\s/gm));
+console.log("class:", c(/\bclass\s/g));
+console.log(" as :", c(/\bas\b/g));
+console.log("enum:", c(/\benum\s/g));
+console.log("lines:", c(/\n/g));
